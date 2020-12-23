@@ -31,17 +31,13 @@ console.log(count);
 
 //4.Տրված ե նախադասություն բոլոր բառերի առաջին տառերը դարձնել մեծատառ և կապույտ գույնի:
 var str_1 = "capitalize all the first letters";
-// var cap = str_1.split(" ");
-// cap = cap.map(value => {
-//   /*string.fontcolor("blue"); Устарело! https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/fontcolor */
-//   return `<span style="color:blue">${value[0].toUpperCase()}</span>` + value.slice(1);
-// });
-// str_1 = cap.join(" ");
 str_1 = str_1.split(" ").map(value => value[0].toUpperCase().fontcolor("blue") + value.slice(1)).join(" ");
 document.write("<br>" + str_1 + "<br>");
 
 //5.Տրված է խառը զանգված մեջից առանձնացնել link-երը, ինչպես նաև link-երի անուննետը
-var mixed_1 = [`<a href="https://www.google.com/">Google</a>`, `<a href="https://www.amazon.com/">Amazon</a>`, `<a href="https://www.ebay.com/">Ebay</a>`];
+var mixed_1 = [`<a href="https://www.google.com/">Google</a>`,
+  `<a href="https://www.amazon.com/">Amazon</a>`,
+  `<a href="https://www.ebay.com/">Ebay</a>`];
 var links_1 = [], linkNames = [], from, to;
 for (var i = 0; i < mixed_1.length; i++) {
   from = mixed_1[i].indexOf(`http`);
