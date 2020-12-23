@@ -63,6 +63,5 @@ console.log(arr);
 //7.Տրված է տող առանդնացնել ‘yan’ –ով վերջացող բառերը:
 
 var yan = "Tumanyan Bakunc Abovyan Metsarenc Isahakyan Raffi Matevosyan";
-var yanArr = yan.split(" ");
-yanArr = yanArr.filter(value => value.endsWith("yan"));
+var yanArr = yan.split(" ").filter(value => value.endsWith("yan"));
 console.log(yanArr);
